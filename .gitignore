@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Editor / tooling
+.vscode/
+.claude/
+
+# ht-ml.app publish sidecars - contain a secret update_key, must never be
+# committed. No trailing slash, so this catches a symlink of the same name too.
+*.ht-ml.json
+source-docs
