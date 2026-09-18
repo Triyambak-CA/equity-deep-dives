@@ -238,6 +238,27 @@
 </style>
 </head>
 <body>
+<!-- eqdd-home-link -->
+<style>
+  #eqdd-home{
+    position:fixed; left:16px; bottom:16px; z-index:1001;
+    display:inline-flex; align-items:center;
+    background:var(--card); border:1px solid var(--border2); color:var(--muted);
+    font-family:var(--g-m, ui-monospace, "SF Mono", Menlo, Consolas, monospace);
+    font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+    padding:8px 12px; text-decoration:none;
+    box-shadow:0 6px 22px rgba(0,0,0,.5);
+    transition:color .18s ease, border-color .18s ease;
+  }
+  #eqdd-home:hover{color:var(--text); border-color:var(--accent); text-decoration:none}
+  #eqdd-home:focus-visible{outline:1px solid var(--accent); outline-offset:3px}
+  @media (max-width:760px){
+    #eqdd-home{left:10px; bottom:10px; font-size:10px; padding:7px 10px}
+  }
+  @media print{ #eqdd-home{display:none} }
+</style>
+<a id="eqdd-home" href="./" title="All published deep dives">All reports</a>
+<!-- /eqdd-home-link -->
 <div id="progress"></div>
 <button id="ratetog" class="on" title="Show or hide the qualitative moat rating badges (Weak / Moderate / Strong / None)"><span class="tl">Ratings</span><span class="sw"><i></i></span><span class="st">On</span></button>
 <div class="layout">
